@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array methods</title>
+</head>
+
+<body>
+    <script>
+        let x = ['dharan', 'hari', 'nethaji'];
+        let y = ['pavani', 'krishna', 'nani'];
+        let z = [12, 45, 18, 5, 24, 14, 6, 8, 22];
+
+        function check(z) {
+            return z >= 12;
+        }
+
+        function foreach(item, index) {
+            console.log(index + ":" + item);
+        }
+        //concat()
+        console.log(x.concat(y));
+        //constructor()
+        console.log(x.constructor);
+        console.log(y.constructor);
+        //copywithin()
+        console.log(x.copyWithin(1, 0));
+        console.log(y.copyWithin(1, 0));
+        console.log(x.copyWithin(1, 0, 2));
+        //entries(not undestand clearly)
+        console.log(x.entries());
+        //every()
+        console.log(z.every(check));
+        //fill
+        console.log(x.fill('hari krishna', 1, 3));
+        //filter
+        console.log(z.filter(check));
+        //find
+        console.log(z.find(check));
+        //findindex
+        console.log(z.findIndex(check));
+        //foreach
+        z.forEach(foreach);
+        //from
+        console.log(Array.from('dharankumar'));
+        //includes
+        console.log(x.includes('dharan'));
+        //indexOf
+        console.log(x.indexOf('dharan'));
+        //length
+        console.log(x.length);
+        //lastindexof
+        console.log(x.lastIndexOf('dharan'));
+        //tostring
+        console.log(x.toString);
+        console.log(z.toString);
+        //unshift
+        console.log(x.unshift('dk', 'netha'));
+        //valueof
+        console.log(x.valueOf());
+        console.log(y.valueOf());
+        console.log(z.valueOf());
+    </script>
+
+</body>
+
+</html>
